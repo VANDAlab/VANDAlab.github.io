@@ -15,3 +15,14 @@
 .image-slider img.visible {
     opacity: 1;
 }
+
+
+/* Add space below paragraphs */
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Add space around images */
+img {
+  margin: 1.5rem 0;
+}
