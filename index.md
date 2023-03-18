@@ -2,6 +2,27 @@
 layout: default
 ---
 
+<div class="tab-btn-container">
+  <div class="tab-btn active" onclick="openTab(event, 'tab1')">Tab 1</div>
+  <div class="tab-btn" onclick="openTab(event, 'tab2')">Tab 2</div>
+  <div class="tab-btn" onclick="openTab(event, 'tab3')">Tab 3</div>
+</div>
+
+<div id="tab1" class="tab" style="display: block;">
+  <h2>Tab 1</h2>
+  <p>Content for Tab 1</p>
+</div>
+
+<div id="tab2" class="tab">
+  <h2>Tab 2</h2>
+  <p>Content for Tab 2</p>
+</div>
+
+<div id="tab3" class="tab">
+  <h2>Tab 3</h2>
+  <p>Content for Tab 3</p>
+</div>
+
 # Welcome to VANDA Lab
 
 We are an interdisciplinary research group at the [Cerebral Imaging Centre](https://douglas.research.mcgill.ca/cerebral-imaging-centre/) of the [Douglas Research Institute](http://douglas.research.mcgill.ca) at [McGill University](https://www.mcgill.ca). Our team investigates the role of cerebrovascular pathology in aging and neurodegenerative disease populations. Our research has three main components:
