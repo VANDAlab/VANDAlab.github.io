@@ -10,8 +10,8 @@ We are an interdisciplinary research group at the [Cerebral Imaging Centre](http
     <img class="visible" src="/assets/img1.png" alt="Image 1">
     <img src="/assets/img6.png" alt="Image 2">
     <img src="/assets/img7.png" alt="Image 3">
-    <img src="/assets/img9.png" alt="Image 3">
-    <img src="/assets/img10.png" alt="Image 3">
+    <img src="/assets/img9.png" alt="Image 4">
+    <img src="/assets/img10.png" alt="Image 5">
 </div>
 
 
