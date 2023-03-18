@@ -1,3 +1,37 @@
+.image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-slider img {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.image-slider img:first-child {
+    opacity: 1;
+}
+
+(function() {
+    var slider = document.getElementById('image-slider');
+    var images = slider.getElementsByTagName('img');
+    var currentIndex = 0;
+    var interval = 3000; // Duration in milliseconds between image changes
+
+    function changeImage() {
+        images[currentIndex].style.opacity = 0;
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.opacity = 1;
+    }
+
+    setInterval(changeImage, interval);
+})();
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
