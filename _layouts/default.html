@@ -1,3 +1,4 @@
+<style>
 .image-slider {
     position: relative;
     width: 100%;
@@ -12,9 +13,11 @@
     transition: opacity 1s;
 }
 
-.image-slider img:first-child {
+.image-slider img.visible {
     opacity: 1;
 }
+</style>
+
 
 (function() {
     var slider = document.getElementById('image-slider');
