@@ -1,2 +1,2 @@
 # vandalab.github.io
-Lab website
+VANDA Lab
