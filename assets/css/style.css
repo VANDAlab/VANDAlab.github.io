@@ -1,14 +1,14 @@
 
 .image-slider {
     position: relative;
-    width: 50%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .image-slider img {
     position: absolute;
-    width: 50%;
+    width: 100%;
     opacity: 0;
     transition: opacity 1s;
 }
