@@ -26,3 +26,31 @@ p {
 img {
   margin: 3.5rem 0;
 }
+
+/* Tab styles */
+.tab {
+  display: none;
+}
+
+.tab-btn-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  flex: 1;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #ddd;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.tab-btn:hover {
+  background-color: #eee;
+}
+
+.tab-btn.active {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
