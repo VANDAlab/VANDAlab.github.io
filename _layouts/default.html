@@ -1,44 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-.image-slider {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <style>
+        .image-slider {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-.image-slider img {
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 1s;
-}
+        .image-slider img {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 1s;
+        }
 
-.image-slider img.visible {
-    opacity: 1;
-}
-</style>
-
+        .image-slider img.visible {
+            opacity: 1;
+        }
+    </style>
 </head>
-
 <body>
-    
-<script>
-(function() {
-    var slider = document.getElementById('image-slider');
-    var images = slider.getElementsByTagName('img');
-    var currentIndex = 0;
-    var interval = 3000; // Duration in milliseconds between image changes
+    <div class="container">
+        {{ content }}
+    </div>
 
-    function changeImage() {
-        images[currentIndex].classList.remove('visible');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('visible');
-    }
+    <script>
+        (function() {
+            var slider = document.getElementById('image-slider');
+            var images = slider.getElementsByTagName('img');
+            var currentIndex = 0;
+            var interval = 3000; // Duration in milliseconds between image changes
 
-    setInterval(changeImage, interval);
-})();
-</script>
+            function changeImage() {
+                images[currentIndex].classList.remove('visible');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('visible');
+            }
 
+            setInterval(changeImage, interval);
+        })();
+    </script>
 </body>
-
+</html>
