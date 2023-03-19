@@ -1,41 +1,42 @@
-.image-slider {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.image-slider img {
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.image-slider img.visible {
-    opacity: 1;
-}
-
 
 /* Add space below paragraphs */
 p {
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.6rem;
+  line-height: 1.6; /* Adjust this value to increase or decrease the space between lines of text */
 }
-
-p {
-    line-height: 1.6; /* Adjust this value to increase or decrease the space between lines of text */
-}
-
 
 /* Add space around images */
 img {
-  margin: 3.5rem 0;
+  margin: 1.6rem 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.person {
-    margin: 0 20px; /* Adjust these values to increase or decrease the space between people */
+/* Image slider */
+.image-slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+.image-slider img {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.image-slider img.visible {
+  opacity: 1;
+}
 
 /* Tab styles */
 .tab {
@@ -63,4 +64,13 @@ img {
 .tab-btn.active {
   background-color: #fff;
   border-bottom: 1px solid #fff;
+}
+
+/* Team member styles */
+.person {
+  margin: 0 20px; /* Adjust these values to increase or decrease the space between people */
+}
+
+.person img {
+  max-width: 150px; /* Adjust this value to set the maximum width of the image */
 }
