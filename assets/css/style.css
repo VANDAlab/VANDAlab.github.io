@@ -87,13 +87,14 @@ img {
 /* Navbar styles */
 .navbar {
   background-color: #f8f8f8; /* Adjust the color as desired */
-  padding: 20px; /* Adjust the padding as desired */
+  padding: 10px; /* Adjust the padding as desired */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
 }
 
 .tabs {
   display: flex;
   justify-content: right; /* Optional: center the tabs */
+  margin-bottom: 20px; /* Adjust this value to increase or decrease the space between the tabs and the text */
 }
 
 .tabs a {
