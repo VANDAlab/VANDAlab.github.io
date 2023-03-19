@@ -87,13 +87,25 @@ img {
 /* Navbar styles */
 .navbar {
   background-color: #f8f8f8; /* Adjust the color as desired */
-  padding: 50px; /* Adjust the padding as desired */
+  padding: 20px; /* Adjust the padding as desired */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
 }
 
 .tabs {
   display: flex;
   justify-content: right; /* Optional: center the tabs */
+}
+
+.tabs a {
+  margin-right: 10px; /* Adjust this value to increase or decrease the space between tabs */
+  padding: 5px 10px; /* Adjust the padding for a more comfortable tab size */
+  text-decoration: none; /* Remove the underline */
+  color: #333; /* Adjust the link color as desired */
+}
+
+.tabs a:hover {
+  background-color: #eee; /* Adjust the background color for the hover effect */
+  border-radius: 3px; /* Optional: add some border-radius for a rounded appearance */
 }
 
 
