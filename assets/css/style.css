@@ -69,8 +69,12 @@ img {
 /* Team member styles */
 .person {
   display: flex; /* Use flexbox to align the content */
-  align-items: center; /* Vertically align items in the center */
   margin-bottom: 20px; /* Add space below each person container */
+}
+.person-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .person img {
