@@ -108,4 +108,8 @@ img {
   border-radius: 3px; /* Optional: add some border-radius for a rounded appearance */
 }
 
+header h1,
+header h3 {
+  margin-top: 20px; /* Adjust this value to increase or decrease the space before the headers */
+}
 
