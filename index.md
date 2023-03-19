@@ -2,26 +2,12 @@
 layout: default
 ---
 
-<div class="tab-btn-container">
-  <div class="tab-btn active" onclick="openTab(event, 'tab1')">Research</div>
-  <div class="tab-btn" onclick="openTab(event, 'tab2')">Team</div>
-  <div class="tab-btn" onclick="openTab(event, 'tab3')">Publications</div>
+<div class="tabs">
+    <a href="research.html">Research</a>
+    <a href="team.html">Team</a>
+    <a href="publications.html">Publications</a>
 </div>
 
-<div id="tab1" class="tab" style="display: block;">
-  <h2>Research</h2>
-  <p>Content for Tab 1</p>
-</div>
-
-<div id="tab2" class="tab">
-  <h2>Team</h2>
-  <p>Content for Tab 2</p>
-</div>
-
-<div id="tab3" class="tab">
-  <h2>Tab 3</h2>
-  <p>Publications</p>
-</div>
 
 # Welcome to VANDA Lab
 
