@@ -72,6 +72,10 @@ img {
 }
 
 .person img {
-  max-width: 50px; /* Adjust this value to set the maximum width of the image */px
+  max-width: 150px; /* Adjust this value to set the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Align the image properly */
+  margin: 0 auto; /* Center the image within the .person container */
 }
+
 
