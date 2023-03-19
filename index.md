@@ -3,24 +3,24 @@ layout: default
 ---
 
 <div class="tab-btn-container">
-  <div class="tab-btn active" onclick="openTab(event, 'tab1')">Tab 1</div>
-  <div class="tab-btn" onclick="openTab(event, 'tab2')">Tab 2</div>
-  <div class="tab-btn" onclick="openTab(event, 'tab3')">Tab 3</div>
+  <div class="tab-btn active" onclick="openTab(event, 'tab1')">Research</div>
+  <div class="tab-btn" onclick="openTab(event, 'tab2')">Team</div>
+  <div class="tab-btn" onclick="openTab(event, 'tab3')">Publications</div>
 </div>
 
 <div id="tab1" class="tab" style="display: block;">
-  <h2>Tab 1</h2>
+  <h2>Research</h2>
   <p>Content for Tab 1</p>
 </div>
 
 <div id="tab2" class="tab">
-  <h2>Tab 2</h2>
+  <h2>Team</h2>
   <p>Content for Tab 2</p>
 </div>
 
 <div id="tab3" class="tab">
   <h2>Tab 3</h2>
-  <p>Content for Tab 3</p>
+  <p>Publications</p>
 </div>
 
 # Welcome to VANDA Lab
