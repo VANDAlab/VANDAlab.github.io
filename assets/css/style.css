@@ -72,5 +72,5 @@ img {
 }
 
 .person img {
-  max-width: 10px; /* Adjust this value to set the maximum width of the image */
+  max-width: 150px; /* Adjust this value to set the maximum width of the image */
 }
