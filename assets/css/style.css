@@ -94,7 +94,6 @@ img {
 .tabs {
   display: flex;
   justify-content: right; /* Optional: center the tabs */
-  margin-bottom: 20px; /* Adjust this value to increase or decrease the space between the tabs and the text */
 }
 
 .tabs a {
