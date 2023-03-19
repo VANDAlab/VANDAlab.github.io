@@ -87,13 +87,13 @@ img {
 /* Navbar styles */
 .navbar {
   background-color: #f8f8f8; /* Adjust the color as desired */
-  padding: 10px; /* Adjust the padding as desired */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  padding: 50px; /* Adjust the padding as desired */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
 }
 
 .tabs {
   display: flex;
-  justify-content: center; /* Optional: center the tabs */
+  justify-content: right; /* Optional: center the tabs */
 }
 
 
