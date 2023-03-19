@@ -27,6 +27,11 @@ img {
   margin: 3.5rem 0;
 }
 
+.person {
+    margin: 0 20px; /* Adjust these values to increase or decrease the space between people */
+}
+
+
 /* Tab styles */
 .tab {
   display: none;
