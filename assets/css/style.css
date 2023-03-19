@@ -1,8 +1,14 @@
 /* Reset default margin and padding for all elements */
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  margin: 20px; /* Adjust this value to set the desired margin size */
 }
 
 /* Add space below paragraphs */
@@ -76,5 +82,6 @@ img {
   height: auto;
   margin-right: 20px; /* Add space to the right of the image */
 }
+
 
 
