@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="tabs">
+    <a href="index.md">Home</a>
     <a href="research.html">Research</a>
     <a href="team.html">Team</a>
     <a href="publications.html">Publications</a>
