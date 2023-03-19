@@ -8,14 +8,14 @@
 }
 
 body {
-  margin: 80px; /* Adjust this value to set the desired margin size */
+  margin: 100px; /* Adjust this value to set the desired margin size */
   font-family: Arial, sans-serif; /* Set the font family to Arial */
 }
 
 /* Add space below paragraphs */
 p {
   margin-bottom: 1.6rem;
-  line-height: 1.6; /* Adjust this value to increase or decrease the space between lines of text */
+  line-height: 2.6; /* Adjust this value to increase or decrease the space between lines of text */
 }
 
 /* Add space around images */
