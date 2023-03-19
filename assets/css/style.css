@@ -113,3 +113,8 @@ header h3 {
   margin-top: 20px; /* Adjust this value to increase or decrease the space before the headers */
 }
 
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; /* Adjust this value to increase or decrease the space between columns */
+}
