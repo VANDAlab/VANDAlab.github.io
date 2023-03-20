@@ -14,8 +14,9 @@ body {
 
 /* Add space below paragraphs */
 p {
-  margin-bottom: 1.6rem;
-  line-height: 1.6; /* Adjust this value to increase or decrease the space between lines of text */
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  line-height: 1; /* Adjust this value to increase or decrease the space between lines of text */
 }
 
 /* Add space around images */
