@@ -120,4 +120,6 @@ header h1, h2, h3, h4 {
   margin-bottom: 20px;
 }
 
-
+li {
+    line-height: 1.5;
+}
