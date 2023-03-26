@@ -33,13 +33,14 @@ img {
   overflow: hidden;
   margin-top: 20px;
   margin-bottom: 20px;
-  max-height: 600px;
+  max-height: 300px;
 }
 
 .image-slider img {
   display: none;
   width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .image-slider img.visible {
