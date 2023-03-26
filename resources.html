@@ -64,5 +64,23 @@
     <img src="/assets/imgr5.png" alt="Image 5">
 </div>
   
+  
+  function startSlider(sliderId) {
+  const slider = document.getElementById(sliderId);
+  const images = slider.getElementsByTagName('img');
+  let currentImage = 0;
+
+  function changeImage() {
+    images[currentImage].classList.remove('visible');
+    currentImage = (currentImage + 1) % images.length;
+    images[currentImage].classList.add('visible');
+  }
+
+  setInterval(changeImage, 3000); // 3000ms = 3 seconds
+}
+
+startSlider('image-slider-1');
+startSlider('image-slider-2');
+startSlider('image-slider-3');
 </body>
 </html>
