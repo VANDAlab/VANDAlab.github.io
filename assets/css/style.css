@@ -29,17 +29,21 @@ img {
 
 /* Image slider */
 .image-slider {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-height: 300px;
 }
 
 .image-slider img {
-  position: absolute;
+  display: none;
   width: 100%;
-  opacity: 0;
-  transition: opacity 1s;
+  height: auto;
+}
+
+.image-slider img.visible {
+  display: block;
 }
 
 .image-slider img.visible {
