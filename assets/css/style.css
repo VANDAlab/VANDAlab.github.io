@@ -27,6 +27,11 @@ img {
   height: auto;
 }
 
+.image img { 
+  max-height: 300px;
+  height: auto;
+}
+
 /* Image slider */
 .image-slider {
   display: flex;
