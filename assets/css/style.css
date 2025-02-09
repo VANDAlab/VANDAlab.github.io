@@ -133,19 +133,39 @@ li {
     margin-bottom: 10px;
 }
 
+/* Ensure content scales properly */
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
-/* Responsive Navbar for Mobile */
+/* Fix text and images so they don’t overflow */
+img, iframe, video {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure navbar items are readable on mobile */
+.navbar {
+    display: flex;
+    flex-direction: column; /* Stack items on small screens */
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  .navbar {
-      flex-direction: column; /* Stack links vertically */
-      align-items: flex-start; /* Align left */
-      width: 100%;
-      margin-left: 0; /* Reset margin */
-  }
+    .container {
+        padding: 10px; /* Reduce padding */
+    }
 
-  .navbar a {
-      padding: 10px;
-      width: 100%;
-      text-align: left; /* Align text */
-  }
+    .navbar a {
+        font-size: 14px; /* Smaller font for better mobile layout */
+        padding: 8px;
+    }
+
+    .team-category, .research-section {
+        text-align: center; /* Align content better */
+        padding: 15px;
+    }
 }
