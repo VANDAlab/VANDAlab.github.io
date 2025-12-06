@@ -1,25 +1,33 @@
 /* Reset default margin and padding for all elements */
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
-  margin: 80px; /* Adjust this value to set the desired margin size */
-  font-family: Arial, sans-serif; /* Set the font family to Arial */
+  margin: 80px;  /* desktop spacing */
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-/* Add space below paragraphs */
+/* MOBILE margin fix */
+@media (max-width: 768px) {
+  body {
+    margin: 15px;   /* much smaller white margins on phone */
+  }
+}
+
+/* PARAGRAPHS */
 p {
   margin-top: 1.3rem;
   margin-bottom: 1rem;
-  line-height: 1.5; /* Adjust this value to increase or decrease the space between lines of text */
+  line-height: 1.5;
 }
 
-/* Add space around images */
+/* IMAGES */
 img {
   margin: 1.6rem 0;
   display: block;
@@ -27,12 +35,12 @@ img {
   height: auto;
 }
 
-.image img { 
+.image img {
   max-height: 300px;
   height: auto;
 }
 
-/* Image slider */
+/* IMAGE SLIDER */
 .image-slider {
   display: flex;
   overflow: hidden;
@@ -42,19 +50,15 @@ img {
 .image-slider img {
   display: none;
   width: 100%;
-  height: auto;
   object-fit: contain;
 }
 
 .image-slider img.visible {
   display: block;
-}
-
-.image-slider img.visible {
   opacity: 1;
 }
 
-/* Tab styles */
+/* TABS */
 .tab {
   display: none;
 }
@@ -82,7 +86,7 @@ img {
   border-bottom: 1px solid #fff;
 }
 
-/* Team member styles */
+/* TEAM GRID */
 .team-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -98,82 +102,81 @@ img {
   height: auto;
 }
 
-
-/* Navbar styles */
+/* NAVBAR */
 .navbar {
-  background-color: #f8f8f8; /* Adjust the color as desired */
-  padding: 10px; /* Adjust the padding as desired */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
+  background-color: #f8f8f8;
+  padding: 12px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .tabs {
   display: flex;
-  justify-content: right; /* Optional: center the tabs */
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .tabs a {
-  margin-right: 10px; /* Adjust this value to increase or decrease the space between tabs */
-  padding: 5px 10px; /* Adjust the padding for a more comfortable tab size */
-  text-decoration: none; /* Remove the underline */
-  color: #333; /* Adjust the link color as desired */
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 .tabs a:hover {
-  background-color: #eee; /* Adjust the background color for the hover effect */
-  border-radius: 3px; /* Optional: add some border-radius for a rounded appearance */
+  background-color: #eee;
 }
 
-header h1, h2, h3, h4 {
-  margin-top: 20px; /* Adjust this value to increase or decrease the space before the headers */
+/* HEADINGS */
+header h1, header h2, header h3, header h4 {
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
+/* LIST ITEMS */
 li {
-    line-height: 1.3;
-    margin-bottom: 10px;
+  line-height: 1.3;
+  margin-bottom: 10px;
 }
 
-/* Ensure content scales properly */
-body {
-    max-width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* Fix text and images so they don’t overflow */
-img, iframe, video {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Ensure navbar items are readable on mobile */
-.navbar {
-    display: flex;
-    flex-direction: column; /* Stack items on small screens */
-    align-items: center;
-    text-align: center;
-}
-
-/* Responsive adjustments */
+/* RESPONSIVE LAYOUT FIXES */
 @media screen and (max-width: 768px) {
-    .container {
-        padding: 10px; /* Reduce padding */
-    }
+  .container {
+    padding: 10px;
+  }
 
-    .navbar a {
-        font-size: 14px; /* Smaller font for better mobile layout */
-        padding: 8px;
-    }
+  .navbar {
+    text-align: center;
+  }
 
-    .team-category, .research-section {
-        text-align: center; /* Align content better */
-        padding: 15px;
-    }
+  .tabs {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .tabs a {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .team-container {
+    grid-template-columns: repeat(2, 1fr); /* better on phone */
+  }
 }
 
-/* Reset box-sizing */
-* { box-sizing: border-box; }
+/* FIXED HEADER (if used) */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 9999;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
 
-/* container that centers content */
+/* CONTAINER */
 .container {
   display:flex;
   align-items:center;
@@ -184,21 +187,14 @@ img, iframe, video {
   margin: 0 auto;
 }
 
-/* header */
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: white;         /* or your color */
-  z-index: 9999;             /* ensure it's above other content */
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+/* LOGO */
+.logo { 
+  text-decoration:none; 
+  font-weight:700; 
+  font-size:1.125rem; 
 }
 
-/* logo */
-.logo { text-decoration:none; font-weight:700; font-size:1.125rem; }
-
-/* nav for desktop */
+/* NAV LIST */
 .main-nav .nav-list {
   display:flex;
   gap:1rem;
@@ -208,17 +204,18 @@ img, iframe, video {
   align-items:center;
 }
 
-/* nav links */
+/* NAV LINKS */
 .main-nav a {
   display:inline-block;
   padding:0.5rem 0.75rem;
   text-decoration:none;
   font-size:1rem;
+  color: #333;
 }
 
-/* hamburger button (hidden on desktop) */
+/* HAMBURGER BUTTON */
 .nav-toggle {
-  display:none; /* shown on mobile via media query */
+  display:none; 
   background: none;
   border: none;
   padding: 0.5rem;
@@ -226,7 +223,7 @@ img, iframe, video {
   min-height:44px;
 }
 
-/* simple hamburger icon styling */
+/* HAMBURGER ICON */
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -244,4 +241,3 @@ img, iframe, video {
 }
 .hamburger::before { top:-7px; }
 .hamburger::after  { top:7px; }
-
