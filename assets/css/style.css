@@ -147,7 +147,6 @@ img {
   padding: 12px;
   border-radius: 10px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.12);
-  text-align: justify;    /* ensure content inside card is justified */
   color: var(--text-color);
 }
 
@@ -205,6 +204,6 @@ section h3, h3 {
 
 
 ul, ol {
-  padding-left: 40px;   /* controls indentation */
+  padding-left: 30px;   /* controls indentation */
   margin-left: 0;        /* optional, keeps it neat */
 }
