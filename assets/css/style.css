@@ -60,6 +60,7 @@ li {
   margin-bottom: 10px;
 }
 
+
 /* Images */
 img {
   margin: 1.6rem 0;
@@ -70,7 +71,7 @@ img {
 
 /* Image container */
 .image img {
-  max-height: 300px;
+  max-height: 400px;
   height: auto;
   border-radius: 8px;
 }
