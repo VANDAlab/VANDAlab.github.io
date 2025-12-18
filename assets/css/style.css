@@ -37,6 +37,10 @@ body *:not(.navbar *):not(.tabs a) {           /* avoid forcing navbar links to 
   text-align: justify !important;
 }
 
+body {
+    padding-bottom: 80px;
+}
+
 /* keep headers left-aligned for readability */
 h1,h2,h3,h4,h5,h6 {
   text-align: left !important;
