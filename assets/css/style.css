@@ -7,6 +7,7 @@
   --nav-teal-dark: #005f5f;
   --card-bg: #ffffff;
   --text-color: #0a2f2f;
+  --page-space: 80px;
 }
 
 /* Reset */
@@ -16,29 +17,32 @@
   box-sizing: border-box;
 }
 
-/* Global body — force background + global justification */
-html, body {
-  height: 100%;
+/* Ensure page can grow beyond viewport */
+html {
+  min-height: 100%;
 }
+
+/* Global body layout */
 body {
-  margin: 80px;
+  min-height: 100vh;
+  margin: 0;                              /* 🔑 remove margin */
+  padding: var(--page-space);             /* 🔑 use padding instead */
+  padding-bottom: var(--page-space);      /* 🔑 guaranteed bottom space */
+
   font-family: Arial, sans-serif;
   max-width: 100%;
   overflow-x: hidden;
-  background-color: var(--bg-light-teal) !important;   /* force background */
+  background-color: var(--bg-light-teal) !important;
   color: var(--text-color);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* make all textual elements justified by default */
 body,
-body *:not(.navbar *):not(.tabs a) {           /* avoid forcing navbar links to justify */
+body *:not(.navbar *):not(.tabs a) {
   text-align: justify !important;
-}
-
-body {
-    padding-bottom: 80px;
 }
 
 /* keep headers left-aligned for readability */
@@ -47,9 +51,12 @@ h1,h2,h3,h4,h5,h6 {
   color: var(--nav-teal-dark);
 }
 
-/* Remove big top/bottom gaps on mobile */
+/* Responsive spacing on mobile */
 @media (max-width: 768px) {
-  body { margin: 15px; }
+  body {
+    padding: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 /* Paragraphs and lists */
@@ -64,7 +71,6 @@ li {
   margin-bottom: 10px;
 }
 
-
 /* Images */
 img {
   margin: 1.6rem 0;
@@ -73,7 +79,7 @@ img {
   height: auto;
 }
 
-/* Image container */
+/* Header image container */
 .image img {
   max-height: 400px;
   height: auto;
@@ -103,7 +109,7 @@ img {
   display: none;
 }
 
-/* NAVBAR — forced teal color and readable links */
+/* NAVBAR */
 .navbar {
   background-color: var(--nav-teal) !important;
   padding: 12px 16px;
@@ -120,7 +126,7 @@ img {
   gap: 10px;
 }
 
-/* navbar links — white, bold */
+/* navbar links */
 .tabs a {
   padding: 8px 12px;
   text-decoration: none;
@@ -131,13 +137,12 @@ img {
   display: inline-block;
 }
 
-/* hover state */
 .tabs a:hover {
   background-color: var(--nav-teal-dark) !important;
   text-decoration: none;
 }
 
-/* TEAM grid (used on team page) */
+/* TEAM grid */
 .team-container,
 .team-grid {
   display: grid;
@@ -155,7 +160,7 @@ img {
   color: var(--text-color);
 }
 
-/* images inside person card */
+/* person image */
 .person img {
   width: 100%;
   max-width: 220px;
@@ -165,15 +170,15 @@ img {
   display: block;
 }
 
-/* person name styling */
+/* person name */
 .person h3 {
   margin-top: 10px;
   margin-bottom: 6px;
   font-size: 1.05rem;
-  text-align: center;     /* keep name centered for aesthetic */
+  text-align: center;
 }
 
-/* HEADERS on page sections */
+/* Section headers */
 section h3, h3 {
   color: var(--nav-teal-dark);
   margin: 18px 16px 8px 16px;
@@ -195,7 +200,6 @@ section h3, h3 {
     grid-template-columns: 1fr;
   }
 
-  /* make navbar links larger and easier to tap on phones */
   .tabs a {
     padding: 12px 14px;
     font-size: 17px;
@@ -207,8 +211,7 @@ section h3, h3 {
 .right { text-align: right !important; }
 .left { text-align: left !important; }
 
-
 ul, ol {
-  padding-left: 30px;   /* controls indentation */
-  margin-left: 0;        /* optional, keeps it neat */
+  padding-left: 30px;
+  margin-left: 0;
 }
