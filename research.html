@@ -1,48 +1,194 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research - VANDAlab</title>
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    /* Neuroimaging tools grid */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      max-width: 1000px;
+      margin: 35px auto 50px;
+    }
+
+    .tool-card {
+      text-align: center;
+      padding: 15px;
+      border-radius: 12px;
+      background-color: #f8fafb;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .tool-card img {
+      width: 100%;
+      max-width: 150px;
+      height: 140px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .tool-card h4 {
+      margin: 5px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .tool-card h4 a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .tool-card h4 a:hover {
+      color: #267b83;
+      text-decoration: underline;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 800px) {
+      .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+
+      .tool-card img {
+        height: 120px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="navbar"> <!-- Add the navbar div -->
+
+<div class="navbar">
   <div class="tabs">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="team.html">Team</a>
-      <a href="publications.html">Publications</a>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="team.html">Team</a>
+    <a href="publications.html">Publications</a>
     <a href="resources.html">Resources</a>
   </div>
-</div> <!-- Close the navbar div -->
- 
+</div>
+
 <header>
-  
+
   <h3>Current Research Projects</h3>
-  <p> Combining medical image processing, pattern recognition, and machine learning techniques, 
-    our research aims to study the brain changes that occur in aging and neurodegenerative disorders, 
+
+  <p>
+    Combining medical image processing, pattern recognition, and machine learning techniques,
+    our research aims to study the brain changes that occur in aging and neurodegenerative disorders,
     which require novel methodologies able to exploit information in medical images.
-    Here is a summary of the main research projects that the lab is currently working on.</p>
+    Here is a summary of the main research projects that the lab is currently working on.
+  </p>
+
   <h3>Neuroimaging Methods</h3>
-  <p> Accurate detection of healthy and pathological tissue types from brain MRIs is a requirement in many clinical and research applications. 
-    The variabilities in tissue intensity profiles caused by differences in scanner models, acquisition protocols, 
-    as well as age and potential presence of pathologies make this task challenging. 
-    Developing tools that can be reliably used in multi-center and multi-scanner studies of healthy and diseased populations is therefore essential. 
-    We develop MRI preprocessing and analysis tools for detection and assessment of various brain structures and pathologies.</p>
-  <h3>Cerebrovascular & Neurodegenerative Disorders</h3>
-  <p> Understanding the impact of the mechanisms and interactions through which neurodegenerative and cerebrovascular pathologies 
-    lead to cognitive impairment is essential for developing strategies for prevention of cognitive decline and dementia in aging populations. 
-    Using the tools that we develop, we study the brain changes that occur in different neurodegenerative disease populations 
-    as well as their associations to risk factors and clinical outcomes.</p>
+
+  <p>
+    Accurate detection of healthy and pathological tissue types from brain MRIs is a requirement
+    in many clinical and research applications. The variabilities in tissue intensity profiles
+    caused by differences in scanner models, acquisition protocols, as well as age and potential
+    presence of pathologies make this task challenging. Developing tools that can be reliably used
+    in multi-center and multi-scanner studies of healthy and diseased populations is therefore
+    essential. We develop MRI preprocessing and analysis tools for detection and assessment of
+    various brain structures and pathologies.
+  </p>
+
+  <!-- Neuroimaging tools -->
+  <div class="tools-grid">
+
+    <div class="tool-card">
+      <img src="tool_logos/PELICAN.jpg" alt="PELICAN logo">
+      <h4>
+        <a href="YOUR_PELICAN_PAPER_URL" target="_blank">PELICAN</a>
+      </h4>
+    </div>
+
+    <div class="tool-card">
+      <img src="tool_logos/RAVEN.jpg" alt="BISON logo">
+      <h4>
+        <a href="YOUR_BISON_PAPER_URL" target="_blank">BISON</a>
+      </h4>
+    </div>
+
+    <div class="tool-card">
+      <img src="tool_logos/RAVEN.jpg" alt="RAVEN logo">
+      <h4>
+        <a href="YOUR_RAVEN_PAPER_URL" target="_blank">RAVEN</a>
+      </h4>
+    </div>
+
+    <div class="tool-card">
+      <img src="tool_logos/VARAN.jpg" alt="VARAN logo">
+      <h4>
+        <a href="YOUR_VARAN_PAPER_URL" target="_blank">VARAN</a>
+      </h4>
+    </div>
+
+    <div class="tool-card">
+      <img src="tool_logos/PANDA.jpg" alt="PANDA logo">
+      <h4>
+        <a href="YOUR_PANDA_PAPER_URL" target="_blank">PANDA</a>
+      </h4>
+    </div>
+
+    <div class="tool-card">
+      <img src="tool_logos/RACOON.jpg" alt="RACOON logo">
+      <h4>
+        <a href="YOUR_RACOON_PAPER_URL" target="_blank">RACOON</a>
+      </h4>
+    </div>
+
+    <div class="tool-card">
+      <img src="tool_logos/FONDUE.jpg" alt="FONDUE logo">
+      <h4>
+        <a href="YOUR_FONDUE_PAPER_URL" target="_blank">FONDUE</a>
+      </h4>
+    </div>
+
+  </div>
+
+  <h3>Cerebrovascular &amp; Neurodegenerative Disorders</h3>
+
+  <p>
+    Understanding the impact of the mechanisms and interactions through which neurodegenerative
+    and cerebrovascular pathologies lead to cognitive impairment is essential for developing
+    strategies for prevention of cognitive decline and dementia in aging populations.
+    Using the tools that we develop, we study the brain changes that occur in different
+    neurodegenerative disease populations as well as their associations to risk factors
+    and clinical outcomes.
+  </p>
+
   <h3>Post-mortem Imaging</h3>
-  <p> In-vivo MRIs allow researchers and clinicians to detect early signs of disease and investigate its longitudinal trajectories. 
-    However, MRI is not sufficiently specific for determining the underlying pathology of these alterations. 
-    Linking the abnormalities that are visible on MRI to post-mortem neuropathology information can lead to more sensitive MRI biomarkers, 
-    more refined interpretation of in-vivo findings, and help determine potential disease mechanisms. 
-    We acquire post-mortem and histology data of brains with various neurodegnerative disorders, 
-    and develop tools to process and analyze these images.</p>
+
+  <p>
+    In-vivo MRIs allow researchers and clinicians to detect early signs of disease and investigate
+    their longitudinal trajectories. However, MRI is not sufficiently specific for determining
+    the underlying pathology of these alterations. Linking the abnormalities that are visible
+    on MRI to post-mortem neuropathology information can lead to more sensitive MRI biomarkers,
+    more refined interpretation of in-vivo findings, and help determine potential disease mechanisms.
+    We acquire post-mortem and histology data of brains with various neurodegenerative disorders,
+    and develop tools to process and analyze these images.
+  </p>
+
 </header>
+
 </body>
 </html>
