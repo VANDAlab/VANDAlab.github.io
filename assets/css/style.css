@@ -215,3 +215,30 @@ ul, ol {
   padding-left: 30px;
   margin-left: 0;
 }
+
+
+.tool-card h4 {
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.tool-card h4 a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+  transition: color 0.2s ease;
+}
+
+.tool-card h4 a:hover {
+  color: #267b83;
+  text-decoration: underline;
+}
+
+.tool-card p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #000000;
+  font-weight: normal;
+  margin: 6px 0 5px;
+}
